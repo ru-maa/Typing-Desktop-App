@@ -5,8 +5,9 @@ sg.theme("Dark Grey 13")
 # ウィンドウに配置するコンポーネント
 layout = [  [sg.Text("タイピングする問題を入力してください"), sg.InputText()],
             [sg.Button("search", key=("-SEARCH-")), sg.Button("start", key=("-START-"))],
-            [sg.Output(size=(100, 50), key=("-LOG-"))],
-            [sg.Button("Exit"), sg.Button("Clear", key="-CLEAR-")]
+            [sg.Output(size=(80, 10), key=("-LOG-"))],
+            [sg.Text('input'),sg.In(size=(30, 30), key='-IN-')],
+            [sg.Button("exit"), sg.Button("clear", key="-CLEAR-")]
 ]
 
 # ウィンドウの生成
