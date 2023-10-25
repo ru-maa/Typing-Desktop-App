@@ -1,4 +1,6 @@
+import pandas as pd
 import PySimpleGUI as sg
+import read_csv
 
 sg.theme("Dark Grey 13")
 
@@ -18,7 +20,10 @@ while True:
     if event == sg.WIN_CLOSED or event == "Exit":
         break
     elif event == "-SEARCH-":
-        print(12)
+        list = read_csv.open_csv(values[0])
+        i = 0
+        k = 0
+        print(list[i][k])
     elif event == "-START-":
         aaa = 1
     elif event == "-CLEAR-":
